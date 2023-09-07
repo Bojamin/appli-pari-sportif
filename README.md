@@ -82,4 +82,6 @@ Pour la suite, voici ce que je compte faire avec un peu plus de temps.
 
 ## Remarques
 
-- J'ai ajouté un service PUT car le batch d'update random des sélections ne marchait pas tout le temps de mon coté. 
+- J'ai ajouté un service PUT car le batch d'update random des sélections ne marchait pas tout le temps de mon coté.
+
+- J'ai passé entre 5 à 6 heures sur ce projet. 
