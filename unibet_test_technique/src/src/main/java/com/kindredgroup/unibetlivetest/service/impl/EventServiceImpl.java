@@ -50,11 +50,9 @@ public class EventServiceImpl implements EventService {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
                 LocalDateTime eventStartDate = LocalDateTime.parse(event.getStartDate().toString(), formatter);
 
-                // Comparez la startDate de l'événement avec l'heure actuelle plus 5 minutes
                 LocalDateTime fiveMinutesFromNow = eventStartDate.plusMinutes(5);
 
                 if (now.isBefore(fiveMinutesFromNow) || now.isEqual(fiveMinutesFromNow)) {
-                    // Si startDate est dans les 5 minutes suivantes, ajoutez l'événement à la liste
                     eventsWithin5Minutes.add(event);
                 }
             }
