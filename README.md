@@ -46,7 +46,7 @@ Exemple :
 1. Clonez le projet depuis le référentiel Git :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone https://github.com/Bojamin/unibet-test-technique.git
    
 2. Mettez vous a la racine src pour lancer la commande 
 
