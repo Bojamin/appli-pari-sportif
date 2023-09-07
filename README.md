@@ -9,8 +9,7 @@ Bienvenue dans mon résultat au test technique d'Unibet ! Ce dépot représente 
 - [Exécution Générale](#exécution-générale)
 - [Améliorations potentielle](#améliorations-potentielle)
 - [Dépendances](#dépendances)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Remarques](#remarques)
 
 ## Services
 
@@ -80,3 +79,7 @@ Pour la suite, voici ce que je compte faire avec un peu plus de temps.
 - Les dépendances pour les batchs 
 
 - Les dépendances pour les swagger
+
+## Remarques
+
+- J'ai ajouté un service PUT car le batch d'update random des sélections ne marchait pas tout le temps de mon coté. 
