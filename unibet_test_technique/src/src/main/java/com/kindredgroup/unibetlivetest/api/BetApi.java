@@ -17,9 +17,8 @@ public class BetApi {
     BetService betService;
 
     /** TODO
-     *  @PostMapping(Urls.ADD_BET)
+     *  Méthode pour post un bet
      */
-    //Chemin pour post un bet
     @PostMapping(Urls.ADD_BET)
     @ResponseStatus(code = HttpStatus.CREATED)
     @ApiResponses({

@@ -1,5 +1,6 @@
 package com.kindredgroup.unibetlivetest.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kindredgroup.unibetlivetest.types.SelectionResult;
 import com.kindredgroup.unibetlivetest.types.SelectionState;
 import lombok.Data;
@@ -32,6 +33,7 @@ public class Selection {
     @Enumerated(EnumType.STRING)
     SelectionResult result;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "market_id")
     Market market;
@@ -40,4 +42,5 @@ public class Selection {
         return id;
     }
 
+    public Market getMarket() { return market;}
 }

@@ -1,5 +1,6 @@
 package com.kindredgroup.unibetlivetest.repository;
 
+import com.kindredgroup.unibetlivetest.entity.Market;
 import com.kindredgroup.unibetlivetest.entity.Selection;
 import com.kindredgroup.unibetlivetest.types.SelectionResult;
 import com.kindredgroup.unibetlivetest.types.SelectionState;
@@ -13,5 +14,9 @@ public interface SelectionRepository extends JpaRepository<Selection, Integer> {
 
     Selection getSelectionById(Long id);
 
+    Selection getSelectionByMarketId(Long marketId);
+
     List<Selection> findByResult(SelectionResult result);
+
+    List<Selection> findByMarketId(Long id);
 }

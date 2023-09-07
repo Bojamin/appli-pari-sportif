@@ -37,4 +37,6 @@ public class Event {
     public Long getId() {
         return id;
     }
+
+    public Date getStartDate() {return startDate;}
 }

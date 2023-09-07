@@ -1,15 +1,23 @@
 package com.kindredgroup.unibetlivetest.api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.kindredgroup.unibetlivetest.entity.Event;
+import com.kindredgroup.unibetlivetest.entity.Market;
+import com.kindredgroup.unibetlivetest.entity.Selection;
 import com.kindredgroup.unibetlivetest.service.EventService;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import io.swagger.models.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @Log4j2
@@ -22,12 +30,7 @@ public class EventApi {
     private EventService eventService;
 
     /** TODO
-     *  @GetMapping(Urls.EVENTS)
-     */
-    /**
-     *
-     * @param isLive
-     * @return
+     *  Méthode pour récupérer tous les events ou seulement ceux en cours
      */
     @GetMapping(Urls.EVENTS)
     @ApiResponses({
@@ -36,12 +39,12 @@ public class EventApi {
             @ApiResponse(code = 400, message = "Request mal formée"),
             @ApiResponse(code = 500, message = "Erreur Serveur")
     })
-    public List<Event> recupererEvents(Boolean isLive){
-        return eventService.findAll();
+    public List<Event> recupererEvents(@RequestParam Boolean isLive){
+        return eventService.findAll(isLive);
     }
 
-    /** TODO
-     *  @GetMapping(Urls.SELECTIONS)
+    /**
+     *  Méthode pour récupérer les selections via les markets via l'id event
      */
     @GetMapping(Urls.SELECTIONS)
     @ApiResponses({
@@ -51,9 +54,9 @@ public class EventApi {
             @ApiResponse(code = 404, message = "Evènement introuvable"),
             @ApiResponse(code = 500, message = "Erreur Serveur")
     })
-    public Event recupererEventParId(@PathVariable("id") Long id){
-        return eventService.findById(id);
-    }
+    public List<Selection> recupererEventParId(@PathVariable("id") Long id) {
+        return eventService.recupererSelectionsParEvent(id);
 
+    }
 
 }

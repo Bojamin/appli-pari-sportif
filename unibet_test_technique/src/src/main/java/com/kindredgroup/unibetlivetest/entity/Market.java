@@ -1,5 +1,6 @@
 package com.kindredgroup.unibetlivetest.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -21,6 +22,7 @@ public class Market {
     @Column(name = "name")
     private String name;
 
+    @JsonIgnore
     @OneToMany(targetEntity=Selection.class, mappedBy="market", fetch = FetchType.LAZY)
     private List<Selection> selections = new ArrayList<>();
 
@@ -28,7 +30,8 @@ public class Market {
     @JoinColumn(name = "event_id")
     Event event;
 
-
-
+    public Long getId() {
+        return id;
+    }
 
 }
