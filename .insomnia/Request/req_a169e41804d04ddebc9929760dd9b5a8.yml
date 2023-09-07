@@ -1,0 +1,31 @@
+_id: req_a169e41804d04ddebc9929760dd9b5a8
+type: Request
+parentId: fld_01eac26b22c34e97aecb264ad47790e3
+modified: 1694088236813
+created: 1693934100253
+url: http://localhost:8887/bets/add/3
+name: POST un bet via l'id
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    " cote " : 2,
+    " mise " : 2
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1694088234238
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

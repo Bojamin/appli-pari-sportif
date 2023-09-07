@@ -1,0 +1,23 @@
+_id: req_4d33e748530a4df9b761d3eae40b2668
+type: Request
+parentId: fld_01eac26b22c34e97aecb264ad47790e3
+modified: 1694088240582
+created: 1694085707007
+url: http://localhost:8887/selection/3
+name: PUT une selection en WON via l'id
+description: ""
+method: PUT
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1694088234438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

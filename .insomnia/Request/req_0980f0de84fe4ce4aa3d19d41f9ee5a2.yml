@@ -1,0 +1,23 @@
+_id: req_0980f0de84fe4ce4aa3d19d41f9ee5a2
+type: Request
+parentId: fld_01eac26b22c34e97aecb264ad47790e3
+modified: 1694088241901
+created: 1694086297191
+url: http://localhost:8887/api/v1/events/1/selections
+name: GET un event via l'id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1694088234538
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
