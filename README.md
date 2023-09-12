@@ -7,6 +7,7 @@ Bienvenue dans mon résultat au test technique d'Unibet ! Ce dépot représente 
 - [Services](#services)
 - [Batchs](#batchs)
 - [Exécution Générale](#exécution-générale)
+- [Changement de version](#chagement-de-version)
 - [Améliorations potentielle](#améliorations-potentielle)
 - [Dépendances](#dépendances)
 - [Remarques](#remarques)
@@ -15,11 +16,11 @@ Bienvenue dans mon résultat au test technique d'Unibet ! Ce dépot représente 
 
 ### Service GET Events
 
-Le service GET Events permet de récupérer tous les events
+Le service GET Events permet de récupérer tous les events. Une option isLive est disponible pour ne prendre que les Events en cours
 
 ### Service GET Event
 
-Le service GET Event via id permet de récupérer un event via son id
+Le service GET Event via id permet de récupérer les sélections des market d'un event via son id
 
 ### Service POST Bet
 
@@ -59,6 +60,11 @@ Exemple :
 4. Derrière installez Insomnia et importer les requêtes qui sont dans le dépot. 
 
 5. Vous pouvez maintenant profitez d'un mini Unibet
+
+## Changement de verion
+
+### 1.0 -> 2.0 
+- Correction du GET/events et GET/events/id/selections
 
 ## Améliorations potentielle
 
