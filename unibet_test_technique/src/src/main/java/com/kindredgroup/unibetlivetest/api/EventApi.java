@@ -31,6 +31,9 @@ public class EventApi {
 
     /** TODO
      *  Méthode pour récupérer tous les events ou seulement ceux en cours
+     *
+     * @param isLive Permet de savoir si un event est en cours ou non.
+     * @return Retourne tous une liste d'évènement.
      */
     @GetMapping(Urls.EVENTS)
     @ApiResponses({
@@ -45,6 +48,9 @@ public class EventApi {
 
     /**
      *  Méthode pour récupérer les selections via les markets via l'id event
+     *
+     * @param id Id de l'event
+     * @return Le(s) event(s) selon l'id event
      */
     @GetMapping(Urls.SELECTIONS)
     @ApiResponses({

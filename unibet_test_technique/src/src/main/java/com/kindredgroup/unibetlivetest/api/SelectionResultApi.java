@@ -15,11 +15,15 @@ public class SelectionResultApi {
     @Autowired
     SelectionResultService selectionResultService;
 
-    //Chemin pour mettre des selections en WON
+    /**
+     *  Méthode pour directement mettre une selection en WON
+     *
+     * @param id Id de la sélection
+     */
     @PutMapping("/{id}")
     @ResponseStatus(code = HttpStatus.OK)
-    public void update(@PathVariable("id") Long identifiant) {
-        selectionResultService.update(identifiant);
+    public void update(@PathVariable("id") Long id) {
+        selectionResultService.update(id);
     }
 
 }

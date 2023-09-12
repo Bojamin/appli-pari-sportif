@@ -18,7 +18,11 @@ public class BetApi {
 
     /** TODO
      *  Méthode pour post un bet
+     *
+     * @param bet Contenant les informations d'un bet.
+     * @return Retourne l'id du bet créé.
      */
+
     @PostMapping(Urls.ADD_BET)
     @ResponseStatus(code = HttpStatus.CREATED)
     @ApiResponses({

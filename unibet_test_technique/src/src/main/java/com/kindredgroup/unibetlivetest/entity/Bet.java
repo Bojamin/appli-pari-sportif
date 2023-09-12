@@ -1,6 +1,7 @@
 package com.kindredgroup.unibetlivetest.entity;
 
 import com.kindredgroup.unibetlivetest.types.BetState;
+import com.kindredgroup.unibetlivetest.types.SelectionState;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -43,6 +44,5 @@ public class Bet {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
 
 }

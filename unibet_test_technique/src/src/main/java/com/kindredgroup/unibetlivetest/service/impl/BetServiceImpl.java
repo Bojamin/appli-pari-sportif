@@ -6,6 +6,7 @@ import com.kindredgroup.unibetlivetest.repository.BetRepository;
 import com.kindredgroup.unibetlivetest.repository.CustomerRepository;
 import com.kindredgroup.unibetlivetest.repository.SelectionRepository;
 import com.kindredgroup.unibetlivetest.service.BetService;
+import com.kindredgroup.unibetlivetest.types.SelectionState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,6 +35,7 @@ public class BetServiceImpl implements BetService {
             return null;
         }
         bet.setSelection(selectionRepository.getSelectionById(id));
+        bet.setBetState(SelectionState.OPENED);
         return betRepository.save(bet).getId();
    }
 }
