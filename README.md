@@ -1,6 +1,6 @@
-# Test technique Unibet
+# Application paris sportif springboot
 
-Bienvenue dans mon résultat au test technique d'Unibet ! Ce dépot représente donc mon test technique pour Unibet. 
+Bienvenue dans ma V1 d'application de projet sportif :
 
 ## Table des matières
 
@@ -10,7 +10,6 @@ Bienvenue dans mon résultat au test technique d'Unibet ! Ce dépot représente 
 - [Changement de version](#chagement-de-version)
 - [Améliorations potentielle](#améliorations-potentielle)
 - [Dépendances](#dépendances)
-- [Remarques](#remarques)
 
 ## Services
 
@@ -86,8 +85,3 @@ Pour la suite, voici ce que je compte faire avec un peu plus de temps.
 
 - Les dépendances pour les swagger
 
-## Remarques
-
-- J'ai ajouté un service PUT car le batch d'update random des sélections ne marchait pas tout le temps de mon coté.
-
-- J'ai passé entre 5 à 6 heures sur ce projet. 
